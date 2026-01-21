@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidTestATG</string>
+    <string name="subscription_switch_label">Are you subscribed?</string>
+</resources>

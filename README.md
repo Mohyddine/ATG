@@ -84,7 +84,7 @@ https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/vmap_ad_sam
 
 ## 🎮 Custom Player Controls
 
-- **custom play/pause video control**
+- **custom video play back controls**
 - Designed and implemented using **Jetpack Compose**
 - Integrated directly with ExoPlayer
 - Clean UI with smooth animations and responsive interactions

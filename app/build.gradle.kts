@@ -65,6 +65,7 @@ dependencies {
     implementation(libs.androidx.tv.material)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.compose.material3)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
@@ -78,9 +79,10 @@ dependencies {
     kapt(libs.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
 
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
-    implementation("com.google.ads.interactivemedia.v3:interactivemedia:3.38.0")
-    implementation("androidx.navigation:navigation-compose:2.9.6")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
+    coreLibraryDesugaring(libs.desugar.jdk.libs)
+    implementation(libs.interactivemedia)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.kotlinx.serialization.json)
     implementation(libs.coil.compose)
+    implementation(libs.androidx.compose.material.icons.extended)
 }

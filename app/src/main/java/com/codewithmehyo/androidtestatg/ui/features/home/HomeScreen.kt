@@ -11,14 +11,16 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Text
+import com.codewithmehyo.androidtestatg.R
 import com.codewithmehyo.androidtestatg.ui.components.HorizontalCarousel
-import com.codewithmehyo.androidtestatg.ui.features.home.model.MediaItemUI
 import com.codewithmehyo.androidtestatg.ui.components.SubscriptionCard
 import com.codewithmehyo.androidtestatg.ui.components.TopCarousel
 import com.codewithmehyo.androidtestatg.ui.components.VerticalCarousel
+import com.codewithmehyo.androidtestatg.ui.features.home.model.MediaItemUI
 
 /**
  * The main screen of the application.
@@ -53,7 +55,7 @@ fun HomeScreen(
         Spacer(Modifier.height(24.dp))
         Text(
             modifier = Modifier.padding(start = 16.dp),
-            text = "Home",
+            text = stringResource(R.string.home_label),
             style = MaterialTheme.typography.displayLarge,
             color = Color.White
         )
@@ -71,7 +73,7 @@ fun HomeScreen(
         Spacer(Modifier.height(32.dp))
         Text(
             modifier = Modifier.padding(start = 16.dp),
-            text = "Vertical Images",
+            text = stringResource(R.string.vertical_images_label),
             style = MaterialTheme.typography.titleLarge,
             color = Color.White
         )
@@ -83,7 +85,7 @@ fun HomeScreen(
         Spacer(modifier = Modifier.height(24.dp))
         Text(
             modifier = Modifier.padding(start = 16.dp),
-            text = "Horizontal Images",
+            text = stringResource(R.string.horizontal_images_label),
             style = MaterialTheme.typography.titleLarge,
             color = Color.White
         )

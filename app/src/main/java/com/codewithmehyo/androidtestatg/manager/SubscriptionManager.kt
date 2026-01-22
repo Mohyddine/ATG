@@ -16,12 +16,18 @@ class SubscriptionManager @Inject constructor(
     @param:ApplicationContext private val context: Context
 ) {
     // The shared preferences file to store the subscription status.
-    private val prefs = context.getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
+    private val prefs = context.getSharedPreferences(USER_PREFS_FILE, Context.MODE_PRIVATE)
 
     /**
      * Whether the user is subscribed or not.
      */
     var isSubscribed: Boolean
-        get() = prefs.getBoolean("is_subscribed", false)
-        set(value) = prefs.edit { putBoolean("is_subscribed", value) }
+        get() = prefs.getBoolean(SUBSCRIPTION_STATUS_KEY, SUBSCRIPTION_STATUS_DEFAULT)
+        set(value) = prefs.edit { putBoolean(SUBSCRIPTION_STATUS_KEY, value) }
+
+    companion object {
+        private const val SUBSCRIPTION_STATUS_KEY = "is_subscribed"
+        private const val SUBSCRIPTION_STATUS_DEFAULT = false
+        private const val USER_PREFS_FILE = "user_prefs"
+    }
 }

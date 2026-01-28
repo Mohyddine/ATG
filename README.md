@@ -1,6 +1,7 @@
 ## 📱 Overview
 
-This repository contains a completed **Android Mobile Application** built using **Jetpack Compose** and modern Android development best practices.
+This repository contains a completed **Android TV/Google TV Application** built using **Jetpack
+Compose** and modern Android development best practices.
 
 The application showcases media consumption features commonly used in OTT platforms, including image carousels, HLS video playback, subscription handling, and Google IMA ad integration using **ExoPlayer (Media3)**.
 
